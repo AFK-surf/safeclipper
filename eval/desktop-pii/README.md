@@ -1,7 +1,7 @@
 # Desktop PII Evaluation
 
 This folder benchmarks safeclipper on the Hugging Face dataset
-`JettChenT/desktop-pii-210`.
+[`paperboy-ai/desktop-pii-210`](https://huggingface.co/datasets/paperboy-ai/desktop-pii-210).
 
 The runner downloads the dataset with `datasets.load_dataset`, writes each
 screenshot to a local run directory, invokes the release `safeclipper` CLI on the
@@ -69,7 +69,9 @@ uv --project eval run python \
 
 The default full run uses:
 
-- Dataset: `JettChenT/desktop-pii-210`, split `train`
+- Dataset:
+  [`paperboy-ai/desktop-pii-210`](https://huggingface.co/datasets/paperboy-ai/desktop-pii-210),
+  split `train`
 - Model: `models/openai-privacy-filter/onnx/model_q4_embedded.onnx`
 - CLI: `target/release/safeclipper`
 - Provider: `cpu`

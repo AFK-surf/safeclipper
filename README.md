@@ -40,9 +40,10 @@ Measured on May 25, 2026 with a release build on an Apple M3 Max, 64 GB memory, 
 
 ## Desktop PII Evaluation
 
-The `eval/desktop-pii` harness downloads `JettChenT/desktop-pii-210` from
-Hugging Face, runs safeclipper over all 210 synthetic desktop screenshots, and
-scores Gemini answers on the safeclipper-redacted images.
+The `eval/desktop-pii` harness downloads
+[`paperboy-ai/desktop-pii-210`](https://huggingface.co/datasets/paperboy-ai/desktop-pii-210)
+from Hugging Face, runs safeclipper over all 210 synthetic desktop screenshots,
+and scores Gemini answers on the safeclipper-redacted images.
 
 Latest full run on May 25, 2026. All rows use Gemini redacted-image QA over
 the same 210 synthetic desktop screenshots and the same calibrated

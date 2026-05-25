@@ -58,9 +58,9 @@ QA_SYSTEM_PROMPT = (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Run safeclipper over JettChenT/desktop-pii-210 and score deterministic QA visibility."
+        description="Run safeclipper over paperboy-ai/desktop-pii-210 and score deterministic QA visibility."
     )
-    parser.add_argument("--dataset-name", default="JettChenT/desktop-pii-210")
+    parser.add_argument("--dataset-name", default="paperboy-ai/desktop-pii-210")
     parser.add_argument("--split", default="train")
     parser.add_argument("--local-dataset-dir", default=None, help="Optional local desktop-pii-210 directory.")
     parser.add_argument("--limit", type=int, default=None, help="Optional smoke-test row limit.")
