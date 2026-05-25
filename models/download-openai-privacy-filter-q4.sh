@@ -18,7 +18,8 @@ for path in config.json tokenizer.json tokenizer_config.json onnx/model_q4.onnx 
 done
 
 if [[ ! -f "$ONNX_DIR/model_q4_embedded.onnx" ]]; then
-  /opt/homebrew/bin/uv run --with onnx python - <<'PY'
+  UV_BIN="${UV_BIN:-$(command -v uv)}"
+  "$UV_BIN" run --with onnx python - <<'PY'
 from pathlib import Path
 import onnx
 
