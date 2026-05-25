@@ -1,0 +1,4301 @@
+{
+  "input_records": 20,
+  "expected_source": "ocr_jsonl",
+  "values_total": 273,
+  "ocr_value_hits": 256,
+  "opf_value_hits": 134,
+  "privacy_values_total": 151,
+  "privacy_ocr_hits": 140,
+  "privacy_opf_hits": 111,
+  "utility_values_total": 122,
+  "utility_ocr_hits": 116,
+  "utility_opf_hits": 23,
+  "records_with_any_expected_detected": 19,
+  "records_with_all_ocr_visible_values_detected": 0,
+  "values_by_category": {
+    "privacy": 151,
+    "utility": 122
+  },
+  "ocr_hits_by_category": {
+    "privacy": 140,
+    "utility": 116
+  },
+  "opf_hits_by_category": {
+    "privacy": 111,
+    "utility": 23
+  },
+  "opf_labels": {
+    "private_date": 183,
+    "private_person": 161,
+    "private_email": 26,
+    "private_address": 39,
+    "private_phone": 15,
+    "account_number": 15,
+    "private_url": 9,
+    "secret": 26
+  },
+  "failures": [
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "privacy",
+      "subtype": "What is the city and state for the billing address?",
+      "expected": "Franklin, OH",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the claim number shown in the header?",
+      "expected": "CLM-24-087654",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the current status of the claim?",
+      "expected": "Pending Review",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the total billed amount on the invoice?",
+      "expected": "$3,542.06",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the invoice number?",
+      "expected": "INV-789321",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the Reimbursement Total listed in the summary?",
+      "expected": "$5,542.06",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "category": "utility",
+      "subtype": "What is the selected Payment Method in the Decision section?",
+      "expected": "Provider Payment",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "privacy",
+      "subtype": "What is the internal reference code mentioned in the email?",
+      "expected": "PRIV-6024 / team-claims",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "utility",
+      "subtype": "What is the font name selected in the email formatting toolbar?",
+      "expected": "Helvetica",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "utility",
+      "subtype": "What is the file name of the first attachment at the bottom of the email?",
+      "expected": "Draft Settlement Agreement.pdf",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "utility",
+      "subtype": "How many unread messages are indicated in the 'Inbox' folder in the sidebar?",
+      "expected": "16",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "utility",
+      "subtype": "What is the font size currently selected in the toolbar?",
+      "expected": "12",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "category": "utility",
+      "subtype": "What is the name of the smart mailbox listed under 'Smart Mailboxes'?",
+      "expected": "Today",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the account identifier (record ID) shown in the Secrets Manager panel?",
+      "expected": "REC-8331-95",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the API key value for the payments/api-key?",
+      "expected": "ssk-test-redact-32e17be9474ae4b8ba34a781f0eb",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the device identifier (network endpoint) listed in the Secrets Manager?",
+      "expected": "host-320 / 10.109.209.12",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the Device code provided for the cloudctl auth login?",
+      "expected": "KJMF-BXQW",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the username and host shown in the terminal prompt?",
+      "expected": "sre@host-320",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "privacy",
+      "subtype": "What is the activity context detail listed in the Secrets Manager?",
+      "expected": "Search: late payroll correction",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "utility",
+      "subtype": "What is the name of the Kubernetes namespace being viewed?",
+      "expected": "payments",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "utility",
+      "subtype": "What is the current status of the pod 'payments-api-7c9d8f7d4f-zr4pt'?",
+      "expected": "Running",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "utility",
+      "subtype": "What is the name of the active tab in the Kubernetes dashboard?",
+      "expected": "Logs",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "category": "utility",
+      "subtype": "What is the database connection string prefix shown in the logs?",
+      "expected": "jdbc:postgresql://db.payments.svc:5432/payments",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "privacy",
+      "subtype": "What is the Student ID for Jordan Nguyen?",
+      "expected": "1002050",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "What is the name of the school at the top of the page?",
+      "expected": "Lincoln High School",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "What is the name of the course being viewed?",
+      "expected": "English 10 - Period 3",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "Which marking period is currently selected?",
+      "expected": "Marking Period 4 (Apr 1 - Jun 6)",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "How many students are listed in the gradebook?",
+      "expected": "28 Students",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "What is the grade level for the selected student?",
+      "expected": "10",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "category": "utility",
+      "subtype": "What is the name of the active tab in the student profile sidebar?",
+      "expected": "Details",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "privacy",
+      "subtype": "What is the customer's full residential address?",
+      "expected": "924 Pinecrest Way Unit 12, Brookfield, IL 60513",
+      "ocr_hit": false,
+      "opf_hit": true,
+      "opf_labels": [
+        "private_address"
+      ]
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "privacy",
+      "subtype": "What are the last four digits of the Visa card used for payment?",
+      "expected": "4242",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "privacy",
+      "subtype": "What is the specific pickup point location mentioned for the airport transfer?",
+      "expected": "Terminal 2E, Door 10",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "privacy",
+      "subtype": "What is the name and phone number of the hotel the customer is staying at?",
+      "expected": "Le Lumière Hotel Paris, +33 1 42 60 09 10",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "utility",
+      "subtype": "What is the name of the support platform shown in the header?",
+      "expected": "Travel Support Hub",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "utility",
+      "subtype": "What is the total refund amount calculated for the unused segment?",
+      "expected": "$470.20 USD",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "utility",
+      "subtype": "What is the customer's loyalty tier?",
+      "expected": "Gold Explorer",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "category": "utility",
+      "subtype": "What is the status of the flight from Chicago to Paris (UA 923)?",
+      "expected": "Cancelled / Missed",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "privacy",
+      "subtype": "What is the address of Summit Property Management?",
+      "expected": "1234 Market Street, Suite 200 Riverdale, ST 54321",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "privacy",
+      "subtype": "What is the phone number for Summit Property Management?",
+      "expected": "(555) 789-4321",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "privacy",
+      "subtype": "What is the address for Northfield Consulting LLC?",
+      "expected": "500 Brookside Dr. Riverdale, ST 54321",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "privacy",
+      "subtype": "What is the ID number for the transaction with Summit Property Management?",
+      "expected": "10423",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "privacy",
+      "subtype": "What is the ID number for the deposit from Acme Co.?",
+      "expected": "DEP000134",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "utility",
+      "subtype": "What is the name of the company at the top of the window?",
+      "expected": "Northfield Consulting LLC",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "utility",
+      "subtype": "What is the account name being reconciled?",
+      "expected": "Checking",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "utility",
+      "subtype": "What is the ending balance listed in the Reconcile Information section?",
+      "expected": "25,430.17",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "category": "utility",
+      "subtype": "What is the total amount listed on the receipt?",
+      "expected": "$2,678.34",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "privacy",
+      "subtype": "What is the Internal Ref number for the Doe v. Acme Logistics matter?",
+      "expected": "PRIV-8983 / team-claims",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "utility",
+      "subtype": "What font is currently selected in the email editor?",
+      "expected": "Helvetica",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "utility",
+      "subtype": "What is the status of the matter 'Doe v. Acme Logistics' in the sidebar?",
+      "expected": "Active",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "utility",
+      "subtype": "What is the title of the meeting scheduled for 2:00 PM - 3:00 PM?",
+      "expected": "Client Update Call",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "utility",
+      "subtype": "What is the time zone set in the 'Your Availability' window?",
+      "expected": "(GMT-07:00) Pacific Time (US & Canada)",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "category": "utility",
+      "subtype": "What is the name of the law firm listed in the signature?",
+      "expected": "Riverside Legal Group, LLP",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "category": "privacy",
+      "subtype": "What is the email address used in the curl command example?",
+      "expected": "user@example.com",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "category": "utility",
+      "subtype": "What is the incident ID being investigated in the runbook?",
+      "expected": "INC-4721",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "category": "utility",
+      "subtype": "What is the name of the service experiencing issues?",
+      "expected": "auth-service",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "category": "utility",
+      "subtype": "What is the current status of the first item in the checklist?",
+      "expected": "Checked",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "category": "utility",
+      "subtype": "What region is the environment deployed in?",
+      "expected": "us-east-1 (iad)",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-008_synthetic-pii-000008_910008",
+      "image_path": "images/008_imagegen-008_synthetic-pii-000008_910008.png",
+      "category": "privacy",
+      "subtype": "What is the Guardian Email address?",
+      "expected": "lmorgan@example.com",
+      "ocr_hit": false,
+      "opf_hit": true,
+      "opf_labels": [
+        "private_person"
+      ]
+    },
+    {
+      "scenario_id": "imagegen-008_synthetic-pii-000008_910008",
+      "image_path": "images/008_imagegen-008_synthetic-pii-000008_910008.png",
+      "category": "utility",
+      "subtype": "What is the current status of the Grade Appeal?",
+      "expected": "Under Review",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-008_synthetic-pii-000008_910008",
+      "image_path": "images/008_imagegen-008_synthetic-pii-000008_910008.png",
+      "category": "utility",
+      "subtype": "What is the title of the course for which the grade is being appealed?",
+      "expected": "ENG 4: British Literature",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-008_synthetic-pii-000008_910008",
+      "image_path": "images/008_imagegen-008_synthetic-pii-000008_910008.png",
+      "category": "utility",
+      "subtype": "What is the name of the school displayed in the header?",
+      "expected": "Northfield High School",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "privacy",
+      "subtype": "What is the address for Metro Fitness?",
+      "expected": "10 Industrial Way, Somerville, MA 02143",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "privacy",
+      "subtype": "What is the address for East End Library?",
+      "expected": "47 Central Ave, Chelsea, MA 02150",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the name of the application shown in the top left corner?",
+      "expected": "FleetDispatch",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the current route ID being viewed?",
+      "expected": "Route R-240522-17",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the status of the shipment for Harborview Office Supplies?",
+      "expected": "Pending",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the weight and package count for the Harborview shipment?",
+      "expected": "3 boxes, 18 lbs",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the 'On Time' percentage shown for the route?",
+      "expected": "92%",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "category": "utility",
+      "subtype": "What is the scheduled window for the Harborview Office Supplies stop?",
+      "expected": "10:15 AM – 11:00 AM",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "privacy",
+      "subtype": "What is the policy number associated with this claim?",
+      "expected": "AUTO-87654321",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "privacy",
+      "subtype": "Who is the adjuster assigned to this claim?",
+      "expected": "Jane Adjuster",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What is the Grand Total listed in the Estimate Summary?",
+      "expected": "$6,821.57",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What is the status of claim REC-1380-22 in the Claim Queue?",
+      "expected": "Pending Info",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What is the title of the application shown in the window header?",
+      "expected": "ClaimsWorkstation 5.2.1 - Adjuster Desktop",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What is the claim type for REC-1379-14?",
+      "expected": "Auto Collision",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What is the total labor amount on the repair invoice?",
+      "expected": "$1,092.00",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "category": "utility",
+      "subtype": "What are the names of the three buttons under the Actions section?",
+      "expected": "Approve Payment, Request Supplement, Deny Claim",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-011_synthetic-pii-000011_910011",
+      "image_path": "images/011_imagegen-011_synthetic-pii-000011_910011.png",
+      "category": "utility",
+      "subtype": "What is the title of the calendar event scheduled for Monday at 11 AM?",
+      "expected": "Court Hearing (Dept. 4)",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-011_synthetic-pii-000011_910011",
+      "image_path": "images/011_imagegen-011_synthetic-pii-000011_910011.png",
+      "category": "utility",
+      "subtype": "What is the date range displayed at the top of the main calendar view?",
+      "expected": "May 12 – 18, 2025",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-011_synthetic-pii-000011_910011",
+      "image_path": "images/011_imagegen-011_synthetic-pii-000011_910011.png",
+      "category": "utility",
+      "subtype": "What is the name of the application currently open?",
+      "expected": "Calendar",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-011_synthetic-pii-000011_910011",
+      "image_path": "images/011_imagegen-011_synthetic-pii-000011_910011.png",
+      "category": "utility",
+      "subtype": "What is the title of the reminder scheduled for May 20, 2025?",
+      "expected": "File motion in limine",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the Account ID associated with the authenticated user in the terminal?",
+      "expected": "REC-9762-10",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the username of the Incident Commander listed in the incident report?",
+      "expected": "@alex",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the internal IP address for node-1a2b3c?",
+      "expected": "10.65.149.227",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the external IP address for node-7g8h9i?",
+      "expected": "10.65.149.229",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the Slack channel name for this incident?",
+      "expected": "#inc-2047",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "privacy",
+      "subtype": "What is the URL for the War Room?",
+      "expected": "https://warroom.internal/INC-2047",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the title of the incident report?",
+      "expected": "Deployment Failure - payments-api",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the severity level assigned to this incident?",
+      "expected": "SEV-2",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the status of the incident?",
+      "expected": "Open",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the name of the team responsible for ownership?",
+      "expected": "payments-platform",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "According to the terminal, what is the current Kubernetes context?",
+      "expected": "prod-eu-1",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the OS-IMAGE version for the nodes listed?",
+      "expected": "Ubuntu 22.04.3 LTS",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "category": "utility",
+      "subtype": "What is the summary of the incident?",
+      "expected": "New deployment of payments-api is failing in production.",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "privacy",
+      "subtype": "What is the student ID for Samir Rivera?",
+      "expected": "REC-4335-74",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "privacy",
+      "subtype": "What was the student's recent search activity on Sep 17?",
+      "expected": "Search: private cardiology bill",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "What is the name of the course shown in the gradebook?",
+      "expected": "English 10A",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "What is the name of the school or institution?",
+      "expected": "Northfield Academy",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "Which tab is currently selected in the student profile sidebar?",
+      "expected": "Overview",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "What is the room number for this class?",
+      "expected": "203",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "What is the current grade percentage for Grace Kim?",
+      "expected": "98.8%",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "category": "utility",
+      "subtype": "What is the label of the yellow note at the bottom of the sidebar?",
+      "expected": "Note: medication review pending",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "privacy",
+      "subtype": "What is the Account / Record number for this customer?",
+      "expected": "REC-3920-72",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "privacy",
+      "subtype": "What is the address for work order WO-240515-0679 in the unassigned list?",
+      "expected": "88 Lakeview Ct, Brookfield, IL 60513",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "utility",
+      "subtype": "What is the status of the work order in the modal?",
+      "expected": "Dispatched",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "utility",
+      "subtype": "What is the priority level of the work order?",
+      "expected": "High",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "utility",
+      "subtype": "What is the duration of the appointment?",
+      "expected": "60 minutes",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "category": "utility",
+      "subtype": "What is the title of the application shown in the header?",
+      "expected": "Utility Dispatch Center",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "privacy",
+      "subtype": "What is the email address associated with the customer Apex Industrial Co?",
+      "expected": "ap@apexindco.test",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "privacy",
+      "subtype": "What is the phone number listed for Apex Industrial Co?",
+      "expected": "(555) 214-7880",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "privacy",
+      "subtype": "What is the internal ticket number associated with the reconciliation rule for Apex Industrial Co?",
+      "expected": "PRIV-3402 / team-ops",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "privacy",
+      "subtype": "What is the name of the payee for the transaction dated 2024-05-27 with an amount of -$1,250.00?",
+      "expected": "Tiny Tots Daycare",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "utility",
+      "subtype": "What is the balance of the Business Checking Account as of the statement ending 2024-05-31?",
+      "expected": "$38,412.67",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "utility",
+      "subtype": "How many transactions are currently marked as 'Unmatched' in the reconciliation view?",
+      "expected": "5",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "utility",
+      "subtype": "What is the name of the accounting software being used?",
+      "expected": "LedgerPro Accounting 2024",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "utility",
+      "subtype": "What is the ledger account name and number for the selected transaction?",
+      "expected": "1200 - Accounts Receivable",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "category": "utility",
+      "subtype": "What is the status of the transaction for 'Metro Bank Fee' on 2024-05-30?",
+      "expected": "Matched",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "privacy",
+      "subtype": "What is the street address, city, state, and ZIP code for the owner?",
+      "expected": "123 Maple Dr Riverview, CT 06877",
+      "ocr_hit": false,
+      "opf_hit": true,
+      "opf_labels": [
+        "private_address",
+        "private_address"
+      ]
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "utility",
+      "subtype": "What is the name of the pet whose record is being viewed?",
+      "expected": "Buddy",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "utility",
+      "subtype": "What breed of dog is Buddy?",
+      "expected": "Golden Retriever",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "utility",
+      "subtype": "What is the name of the veterinary clinic?",
+      "expected": "Lakeview Veterinary Clinic",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "utility",
+      "subtype": "What is the status of the upcoming appointment?",
+      "expected": "Scheduled",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "category": "utility",
+      "subtype": "What is the weight of the pet recorded on Apr 12, 2025?",
+      "expected": "72.4 lbs",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "privacy",
+      "subtype": "What is the private link URL displayed in the terminal output?",
+      "expected": "https://files.example.com/share/b15e2ed6b8f40aedbb9deeb4e2f3?sig=9deeb4e2f3",
+      "ocr_hit": false,
+      "opf_hit": true,
+      "opf_labels": [
+        "private_url"
+      ]
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "privacy",
+      "subtype": "What is the Node ID listed in the terminal environment variables?",
+      "expected": "host-755 / 10.52.209.130",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the title of the incident runbook shown in the browser window?",
+      "expected": "Claims API – Incident Runbook",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the severity level of the incident according to the runbook?",
+      "expected": "High",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the name of the cluster listed in the runbook?",
+      "expected": "prod-claims-us-east-1",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the last updated date for the incident runbook?",
+      "expected": "2024-05-20",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the first step listed under 'Rotate External API Token'?",
+      "expected": "1. Log in to the Secrets Manager.",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "category": "utility",
+      "subtype": "What is the name of the service listed in the runbook?",
+      "expected": "claims-api",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "privacy",
+      "subtype": "What is the student's record ID number?",
+      "expected": "REC-2675-51",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "privacy",
+      "subtype": "What is the Submission ID for the assignment in question?",
+      "expected": "SUB-88931",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "utility",
+      "subtype": "What is the title of the course for which the grade appeal was filed?",
+      "expected": "ENG 102: College Composition II",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "utility",
+      "subtype": "What is the title of the essay being reviewed?",
+      "expected": "Essay 3: Research Argument",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "utility",
+      "subtype": "What was the total points earned by the student on this assignment?",
+      "expected": "68 / 100 (68%)",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "utility",
+      "subtype": "What is the current status of the grade appeal?",
+      "expected": "In Progress",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "category": "utility",
+      "subtype": "What is the name of the learning management system shown in the header?",
+      "expected": "Riverside Learning Hub",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-019_synthetic-pii-000019_910019",
+      "image_path": "images/019_imagegen-019_synthetic-pii-000019_910019.png",
+      "category": "utility",
+      "subtype": "What is the permit number for the building permit shown in the schedule window?",
+      "expected": "BLD-2024-01578",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-019_synthetic-pii-000019_910019",
+      "image_path": "images/019_imagegen-019_synthetic-pii-000019_910019.png",
+      "category": "utility",
+      "subtype": "What is the current status of the permit according to the sidebar?",
+      "expected": "Under Review",
+      "ocr_hit": false,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-019_synthetic-pii-000019_910019",
+      "image_path": "images/019_imagegen-019_synthetic-pii-000019_910019.png",
+      "category": "utility",
+      "subtype": "Which map layer is currently selected to show aerial photography?",
+      "expected": "Aerial Imagery",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    },
+    {
+      "scenario_id": "imagegen-019_synthetic-pii-000019_910019",
+      "image_path": "images/019_imagegen-019_synthetic-pii-000019_910019.png",
+      "category": "utility",
+      "subtype": "What is the zoning classification for this property?",
+      "expected": "R-1 Single Family Residential",
+      "ocr_hit": true,
+      "opf_hit": false,
+      "opf_labels": []
+    }
+  ],
+  "records": [
+    {
+      "scenario_id": "imagegen-000_synthetic-pii-000000_910000",
+      "image_path": "images/000_imagegen-000_synthetic-pii-000000_910000.png",
+      "ocr_chars": 2865,
+      "ocr_tokens": 416,
+      "detected_span_count": 35,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the claimant listed in the Claim Summary?",
+          "expected": "Elias Keller",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_address",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Elias Keller?",
+          "expected": "elias.keller@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number listed for the claimant?",
+          "expected": "(555) 867-5309",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone",
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the claimant's date of birth?",
+          "expected": "DOB 1975-05-24",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the street address where the bill is sent?",
+          "expected": "123 Oak Street",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the city and state for the billing address?",
+          "expected": "Franklin, OH",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the ZIP code for the billing address?",
+          "expected": "45005",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the patient's account number on the invoice?",
+          "expected": "ACCT-445566",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the adjuster assigned to this claim?",
+          "expected": "Morgan Davis",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the specific loss location listed?",
+          "expected": "Main St & 5th Ave",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the claim number shown in the header?",
+          "expected": "CLM-24-087654",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the claim?",
+          "expected": "Pending Review",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the total billed amount on the invoice?",
+          "expected": "$3,542.06",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the invoice number?",
+          "expected": "INV-789321",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the medical group that issued the invoice?",
+          "expected": "RIVERDALE MEDICAL GROUP",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the Reimbursement Total listed in the summary?",
+          "expected": "$5,542.06",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the date the claim was assigned?",
+          "expected": "2024-04-18",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the selected Payment Method in the Decision section?",
+          "expected": "Provider Payment",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-001_synthetic-pii-000001_910001",
+      "image_path": "images/001_imagegen-001_synthetic-pii-000001_910001.png",
+      "ocr_chars": 2236,
+      "ocr_tokens": 352,
+      "detected_span_count": 30,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the email address of the primary recipient in the 'To' field?",
+          "expected": "jordan.ellis@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the full name and email address of the first suggested contact in the 'Cc' dropdown?",
+          "expected": "Nora Brooks <nora.brooks@example.com>",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the sender's email address shown in the 'From' section?",
+          "expected": "alex.morgan@ridgewaylaw.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth mentioned for Nora Brooks in the email body?",
+          "expected": "1997-01-15",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the internal reference code mentioned in the email?",
+          "expected": "PRIV-6024 / team-claims",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the person who sent the 'Mediation logistics' email in the inbox sidebar?",
+          "expected": "Jordan Ellis",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the sender of the draft email?",
+          "expected": "Alex Morgan",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the font name selected in the email formatting toolbar?",
+          "expected": "Helvetica",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the file name of the first attachment at the bottom of the email?",
+          "expected": "Draft Settlement Agreement.pdf",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many unread messages are indicated in the 'Inbox' folder in the sidebar?",
+          "expected": "16",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the font size currently selected in the toolbar?",
+          "expected": "12",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the smart mailbox listed under 'Smart Mailboxes'?",
+          "expected": "Today",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-002_synthetic-pii-000002_910002",
+      "image_path": "images/002_imagegen-002_synthetic-pii-000002_910002.png",
+      "ocr_chars": 4405,
+      "ocr_tokens": 420,
+      "detected_span_count": 1,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the account identifier (record ID) shown in the Secrets Manager panel?",
+          "expected": "REC-8331-95",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the API key value for the payments/api-key?",
+          "expected": "ssk-test-redact-32e17be9474ae4b8ba34a781f0eb",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the device identifier (network endpoint) listed in the Secrets Manager?",
+          "expected": "host-320 / 10.109.209.12",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Device code provided for the cloudctl auth login?",
+          "expected": "KJMF-BXQW",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the username and host shown in the terminal prompt?",
+          "expected": "sre@host-320",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the activity context detail listed in the Secrets Manager?",
+          "expected": "Search: late payroll correction",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the Kubernetes namespace being viewed?",
+          "expected": "payments",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the pod 'payments-api-7c9d8f7d4f-zr4pt'?",
+          "expected": "Running",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the active tab in the Kubernetes dashboard?",
+          "expected": "Logs",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the database connection string prefix shown in the logs?",
+          "expected": "jdbc:postgresql://db.payments.svc:5432/payments",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-003_synthetic-pii-000003_910003",
+      "image_path": "images/003_imagegen-003_synthetic-pii-000003_910003.png",
+      "ocr_chars": 1505,
+      "ocr_tokens": 258,
+      "detected_span_count": 24,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the email address listed for the guardian contact?",
+          "expected": "jordan.nguyen@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the mobile phone number for the guardian?",
+          "expected": "555-438-7721",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth (DOB) listed for Jordan Nguyen?",
+          "expected": "1978-09-11",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Student ID for Jordan Nguyen?",
+          "expected": "1002050",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the username for the portal account?",
+          "expected": "jordan.nguyen",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Record ID for the portal account?",
+          "expected": "REC-2050-17",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in the second row of the gradebook?",
+          "expected": "Liam Smith",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in the third row of the gradebook?",
+          "expected": "Ava Rodriguez",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in the fourth row of the gradebook?",
+          "expected": "James Wilson",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in the fifth row of the gradebook?",
+          "expected": "Ella Thompson",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the school at the top of the page?",
+          "expected": "Lincoln High School",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the course being viewed?",
+          "expected": "English 10 - Period 3",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "Which marking period is currently selected?",
+          "expected": "Marking Period 4 (Apr 1 - Jun 6)",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many students are listed in the gradebook?",
+          "expected": "28 Students",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the homeroom number for the selected student?",
+          "expected": "205",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the grade level for the selected student?",
+          "expected": "10",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the active tab in the student profile sidebar?",
+          "expected": "Details",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-004_synthetic-pii-000004_910004",
+      "image_path": "images/004_imagegen-004_synthetic-pii-000004_910004.png",
+      "ocr_chars": 2852,
+      "ocr_tokens": 485,
+      "detected_span_count": 16,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the customer in this support ticket?",
+          "expected": "Talia Nguyen",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the customer's email address?",
+          "expected": "talia.nguyen@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the customer's phone number?",
+          "expected": "+1 (630) 555-0192",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the customer's date of birth?",
+          "expected": "1990-11-08",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the customer's full residential address?",
+          "expected": "924 Pinecrest Way Unit 12, Brookfield, IL 60513",
+          "ocr_hit": false,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the booking reference number for the itinerary?",
+          "expected": "BKG-7H2X9L",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What are the last four digits of the Visa card used for payment?",
+          "expected": "4242",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the specific pickup point location mentioned for the airport transfer?",
+          "expected": "Terminal 2E, Door 10",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name and phone number of the hotel the customer is staying at?",
+          "expected": "Le Lumière Hotel Paris, +33 1 42 60 09 10",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the support platform shown in the header?",
+          "expected": "Travel Support Hub",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the total refund amount calculated for the unused segment?",
+          "expected": "$470.20 USD",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the customer's loyalty tier?",
+          "expected": "Gold Explorer",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the flight number for the flight from Denver to Chicago?",
+          "expected": "UA 948",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the flight from Chicago to Paris (UA 923)?",
+          "expected": "Cancelled / Missed",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the support agent currently logged in?",
+          "expected": "Alex G.",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-005_synthetic-pii-000005_910005",
+      "image_path": "images/005_imagegen-005_synthetic-pii-000005_910005.png",
+      "ocr_chars": 3488,
+      "ocr_tokens": 491,
+      "detected_span_count": 43,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the address of Summit Property Management?",
+          "expected": "1234 Market Street, Suite 200 Riverdale, ST 54321",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number for Summit Property Management?",
+          "expected": "(555) 789-4321",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Northfield Consulting LLC?",
+          "expected": "500 Brookside Dr. Riverdale, ST 54321",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth (DOB) listed in the bottom right status bar?",
+          "expected": "1981-02-22",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the person listed in the status bar?",
+          "expected": "Maya Singh",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the ID number for the transaction with Summit Property Management?",
+          "expected": "10423",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the ID number for the deposit from Acme Co.?",
+          "expected": "DEP000134",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the company at the top of the window?",
+          "expected": "Northfield Consulting LLC",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the account name being reconciled?",
+          "expected": "Checking",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the ending balance listed in the Reconcile Information section?",
+          "expected": "25,430.17",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the statement date for this reconciliation?",
+          "expected": "05/31/2024",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the file listed under Receipt/Document?",
+          "expected": "Receipt 2024-05-31.pdf",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the total amount listed on the receipt?",
+          "expected": "$2,678.34",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the memo for the transaction on 05/30/2024?",
+          "expected": "May 2024 internet",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "private_date"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-006_synthetic-pii-000006_910006",
+      "image_path": "images/006_imagegen-006_synthetic-pii-000006_910006.png",
+      "ocr_chars": 2124,
+      "ocr_tokens": 353,
+      "detected_span_count": 20,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the email address of the sender, Priya Nguyen?",
+          "expected": "priya.nguyen@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number listed in the email signature?",
+          "expected": "(555) 248-7301",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "Who is the first recipient listed in the 'To' field of the email?",
+          "expected": "Jordan Ellis",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Casey Morgan?",
+          "expected": "casey.morgan@lawtonbradley.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the client mentioned in the body of the email?",
+          "expected": "Jane Doe",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Case No. listed under Matter Details in the sidebar?",
+          "expected": "CV-24-01234",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Internal Ref number for the Doe v. Acme Logistics matter?",
+          "expected": "PRIV-8983 / team-claims",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the subject line of the email draft?",
+          "expected": "Re: Doe v. Acme Logistics – Settlement Follow-Up / Case Conference",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What font is currently selected in the email editor?",
+          "expected": "Helvetica",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the matter 'Doe v. Acme Logistics' in the sidebar?",
+          "expected": "Active",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the meeting scheduled for 2:00 PM - 3:00 PM?",
+          "expected": "Client Update Call",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the time zone set in the 'Your Availability' window?",
+          "expected": "(GMT-07:00) Pacific Time (US & Canada)",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many tasks are listed as 'Due Today' in the sidebar?",
+          "expected": "3",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "account_number",
+            "private_phone"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the law firm listed in the signature?",
+          "expected": "Riverside Legal Group, LLP",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-007_synthetic-pii-000007_910007",
+      "image_path": "images/007_imagegen-007_synthetic-pii-000007_910007.png",
+      "ocr_chars": 3542,
+      "ocr_tokens": 326,
+      "detected_span_count": 45,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the user ID associated with the login failure logs?",
+          "expected": "usr_8d2f13",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret",
+            "secret",
+            "secret",
+            "secret",
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth (DOB) listed in the log entries?",
+          "expected": "1989-07-12",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the IP address associated with the device fingerprint in the logs?",
+          "expected": "10.244.225.139",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_url",
+            "secret",
+            "private_url",
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the API key provided in the curl command example?",
+          "expected": "sk-test-redact-561c0f170540483382535b95a8e6",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address used in the curl command example?",
+          "expected": "user@example.com",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the account identifier (record ID) shown in the logs?",
+          "expected": "REC-3400-97",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number",
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the session ID for the failed login attempt?",
+          "expected": "sess_7f3e9b0c1d4a4e7fa9d3b1c2e9c5e4a1",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the incident ID being investigated in the runbook?",
+          "expected": "INC-4721",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the service experiencing issues?",
+          "expected": "auth-service",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the first item in the checklist?",
+          "expected": "Checked",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the version number of the most recent deployment?",
+          "expected": "2025.05.22.3",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What region is the environment deployed in?",
+          "expected": "us-east-1 (iad)",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-008_synthetic-pii-000008_910008",
+      "image_path": "images/008_imagegen-008_synthetic-pii-000008_910008.png",
+      "ocr_chars": 1992,
+      "ocr_tokens": 302,
+      "detected_span_count": 28,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in the Student Information section?",
+          "expected": "Nora Morgan",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the student's date of birth?",
+          "expected": "DOB 1998-03-09",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Nora Morgan?",
+          "expected": "nora.morgan@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number listed for the student?",
+          "expected": "(555) 867-5309",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone",
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the Guardian/Parent listed in the Contact Information sidebar?",
+          "expected": "L. Morgan",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Guardian Email address?",
+          "expected": "lmorgan@example.com",
+          "ocr_hit": false,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Guardian Phone number?",
+          "expected": "(555) 555-1212",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the Registrar logged into the system?",
+          "expected": "T. Smith",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the Grade Appeal?",
+          "expected": "Under Review",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the course for which the grade is being appealed?",
+          "expected": "ENG 4: British Literature",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What was the student's original grade?",
+          "expected": "C+",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number",
+            "private_email",
+            "private_email",
+            "private_email"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the Record ID for this appeal?",
+          "expected": "REC-3682-14",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the school displayed in the header?",
+          "expected": "Northfield High School",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the term listed for the course?",
+          "expected": "Spring 2024",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-009_synthetic-pii-000009_910009",
+      "image_path": "images/009_imagegen-009_synthetic-pii-000009_910009.png",
+      "ocr_chars": 1820,
+      "ocr_tokens": 309,
+      "detected_span_count": 16,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the dispatcher logged into the system?",
+          "expected": "Talia Patel",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the street address for Harborview Office Supplies?",
+          "expected": "77 Harbor Point Lane, Northgate, MA 02118",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number for the driver Jake Morrison?",
+          "expected": "(617) 555-0148",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Order ID for the shipment to Harborview Office Supplies?",
+          "expected": "ORD-524819",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address of the Northgate Distribution Center listed under Pickup?",
+          "expected": "50 Logistics Way, Northgate, MA 02118",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Brighton Pharmacy?",
+          "expected": "200 Washington St, Brighton, MA 02135",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Seaside Market?",
+          "expected": "123 Ocean Ave, Revere, MA 02151",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Northgate Medical Center?",
+          "expected": "320 Maple St, Northgate, MA 02118",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Café Lumen?",
+          "expected": "88 Broad St, Northgate, MA 02118",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for Metro Fitness?",
+          "expected": "10 Industrial Way, Somerville, MA 02143",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for East End Library?",
+          "expected": "47 Central Ave, Chelsea, MA 02150",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the application shown in the top left corner?",
+          "expected": "FleetDispatch",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current route ID being viewed?",
+          "expected": "Route R-240522-17",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many total stops are on this route?",
+          "expected": "12",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the shipment for Harborview Office Supplies?",
+          "expected": "Pending",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the weight and package count for the Harborview shipment?",
+          "expected": "3 boxes, 18 lbs",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the 'On Time' percentage shown for the route?",
+          "expected": "92%",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the scheduled window for the Harborview Office Supplies stop?",
+          "expected": "10:15 AM – 11:00 AM",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-010_synthetic-pii-000010_910010",
+      "image_path": "images/010_imagegen-010_synthetic-pii-000010_910010.png",
+      "ocr_chars": 3493,
+      "ocr_tokens": 499,
+      "detected_span_count": 47,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the claimant for claim REC-1379-14?",
+          "expected": "Priya Patel",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address listed for the claimant Priya Patel?",
+          "expected": "1234 Oak Ridge Dr Austin, TX 78759",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number for the repair shop, Austin Body Works?",
+          "expected": "(512) 555-0144",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for the claimant?",
+          "expected": "priya.patel@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the VIN of the vehicle listed on the repair invoice?",
+          "expected": "1HGCV1F30JA123456",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth (DOB) for the claimant?",
+          "expected": "DOB 1975-12-12",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the policy number associated with this claim?",
+          "expected": "AUTO-87654321",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "Who is the adjuster assigned to this claim?",
+          "expected": "Jane Adjuster",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the Grand Total listed in the Estimate Summary?",
+          "expected": "$6,821.57",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of claim REC-1380-22 in the Claim Queue?",
+          "expected": "Pending Info",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the application shown in the window header?",
+          "expected": "ClaimsWorkstation 5.2.1 - Adjuster Desktop",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the claim type for REC-1379-14?",
+          "expected": "Auto Collision",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the total labor amount on the repair invoice?",
+          "expected": "$1,092.00",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What are the names of the three buttons under the Actions section?",
+          "expected": "Approve Payment, Request Supplement, Deny Claim",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-011_synthetic-pii-000011_910011",
+      "image_path": "images/011_imagegen-011_synthetic-pii-000011_910011.png",
+      "ocr_chars": 1901,
+      "ocr_tokens": 380,
+      "detected_span_count": 25,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Samir Morgan?",
+          "expected": "samir.morgan@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth listed for Samir Morgan in the event details?",
+          "expected": "1990-12-23",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Zoom meeting ID for the Deposition Prep session?",
+          "expected": "948 2718 4432",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret",
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number provided for the 'One tap mobile' join option?",
+          "expected": "+1 470-555-0192,,94827184432#",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret",
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the person listed as the first attendee for the Deposition Prep?",
+          "expected": "Lisa Chen",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Mark Delgado?",
+          "expected": "mark.delgado@thornelegal.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the calendar event scheduled for Monday at 11 AM?",
+          "expected": "Court Hearing (Dept. 4)",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the date range displayed at the top of the main calendar view?",
+          "expected": "May 12 – 18, 2025",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the application currently open?",
+          "expected": "Calendar",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the battery percentage shown in the status bar?",
+          "expected": "82%",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret",
+            "secret"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What day of the week is May 16, 2025, according to the calendar?",
+          "expected": "Friday",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the reminder scheduled for May 20, 2025?",
+          "expected": "File motion in limine",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-012_synthetic-pii-000012_910012",
+      "image_path": "images/012_imagegen-012_synthetic-pii-000012_910012.png",
+      "ocr_chars": 2372,
+      "ocr_tokens": 279,
+      "detected_span_count": 1,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full value of the CLOUD_API_KEY exported in the terminal?",
+          "expected": "sk-test-redact-0cb27c69748d2303f19ecd4443f8",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Account ID associated with the authenticated user in the terminal?",
+          "expected": "REC-9762-10",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the username of the Incident Commander listed in the incident report?",
+          "expected": "@alex",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the internal IP address for node-1a2b3c?",
+          "expected": "10.65.149.227",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the external IP address for node-7g8h9i?",
+          "expected": "10.65.149.229",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Slack channel name for this incident?",
+          "expected": "#inc-2047",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the URL for the War Room?",
+          "expected": "https://warroom.internal/INC-2047",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the incident report?",
+          "expected": "Deployment Failure - payments-api",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the severity level assigned to this incident?",
+          "expected": "SEV-2",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the incident?",
+          "expected": "Open",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the team responsible for ownership?",
+          "expected": "payments-platform",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "According to the terminal, what is the current Kubernetes context?",
+          "expected": "prod-eu-1",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the OS-IMAGE version for the nodes listed?",
+          "expected": "Ubuntu 22.04.3 LTS",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the summary of the incident?",
+          "expected": "New deployment of payments-api is failing in production.",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-013_synthetic-pii-000013_910013",
+      "image_path": "images/013_imagegen-013_synthetic-pii-000013_910013.png",
+      "ocr_chars": 1902,
+      "ocr_tokens": 327,
+      "detected_span_count": 17,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the student whose profile is open in the right sidebar?",
+          "expected": "Samir Rivera",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the student ID for Samir Rivera?",
+          "expected": "REC-4335-74",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address listed for the student's guardian?",
+          "expected": "samir.rivera@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number provided for the guardian contact?",
+          "expected": "555-410-2217",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the guardian listed for Samir Rivera?",
+          "expected": "Maria Rivera",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the student listed in row 1 of the gradebook?",
+          "expected": "Aaliyah Johnson",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What was the student's recent search activity on Sep 17?",
+          "expected": "Search: private cardiology bill",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the teacher's name for this course?",
+          "expected": "Mr. Thomas Pearson",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the course shown in the gradebook?",
+          "expected": "English 10A",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the school or institution?",
+          "expected": "Northfield Academy",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "Which tab is currently selected in the student profile sidebar?",
+          "expected": "Overview",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the room number for this class?",
+          "expected": "203",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current grade percentage for Grace Kim?",
+          "expected": "98.8%",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the label of the yellow note at the bottom of the sidebar?",
+          "expected": "Note: medication review pending",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-014_synthetic-pii-000014_910014",
+      "image_path": "images/014_imagegen-014_synthetic-pii-000014_910014.png",
+      "ocr_chars": 2003,
+      "ocr_tokens": 351,
+      "detected_span_count": 17,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the customer listed in the work order details?",
+          "expected": "Lena Chen",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for the customer Lena Chen?",
+          "expected": "lena.chen@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number associated with the customer in the work order?",
+          "expected": "(630) 555-0186",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth listed for the customer?",
+          "expected": "DOB 1986-08-18",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the service address for the work order?",
+          "expected": "77 Harbor Point Lane, Brookfield, IL 60513",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Account / Record number for this customer?",
+          "expected": "REC-3920-72",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the technician in Crew LJ?",
+          "expected": "Larry James",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the next address listed for technician Maya Williams?",
+          "expected": "456 Pine Ave",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the address for work order WO-240515-0679 in the unassigned list?",
+          "expected": "88 Lakeview Ct, Brookfield, IL 60513",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the ID number of the work order shown in the central modal?",
+          "expected": "WO-240515-0678",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the work order in the modal?",
+          "expected": "Dispatched",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the priority level of the work order?",
+          "expected": "High",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the duration of the appointment?",
+          "expected": "60 minutes",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many assigned technicians are listed in the sidebar?",
+          "expected": "6",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone",
+            "private_date",
+            "private_address",
+            "private_address",
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the application shown in the header?",
+          "expected": "Utility Dispatch Center",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-015_synthetic-pii-000015_910015",
+      "image_path": "images/015_imagegen-015_synthetic-pii-000015_910015.png",
+      "ocr_chars": 2831,
+      "ocr_tokens": 384,
+      "detected_span_count": 4,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the user currently logged into the accounting software?",
+          "expected": "Elias Patel",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address associated with the customer Apex Industrial Co?",
+          "expected": "ap@apexindco.test",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number listed for Apex Industrial Co?",
+          "expected": "(555) 214-7880",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the internal ticket number associated with the reconciliation rule for Apex Industrial Co?",
+          "expected": "PRIV-3402 / team-ops",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the payee for the transaction dated 2024-05-27 with an amount of -$1,250.00?",
+          "expected": "Tiny Tots Daycare",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the balance of the Business Checking Account as of the statement ending 2024-05-31?",
+          "expected": "$38,412.67",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many transactions are currently marked as 'Unmatched' in the reconciliation view?",
+          "expected": "5",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the accounting software being used?",
+          "expected": "LedgerPro Accounting 2024",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the ledger account name and number for the selected transaction?",
+          "expected": "1200 - Accounts Receivable",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the transaction for 'Metro Bank Fee' on 2024-05-30?",
+          "expected": "Matched",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-016_synthetic-pii-000016_910016",
+      "image_path": "images/016_imagegen-016_synthetic-pii-000016_910016.png",
+      "ocr_chars": 2107,
+      "ocr_tokens": 317,
+      "detected_span_count": 33,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the pet owner listed in the Owner Profile?",
+          "expected": "Jordan Brooks",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address for Jordan Brooks?",
+          "expected": "jordan.brooks@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_email",
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the phone number listed for the owner?",
+          "expected": "(555) 867-5309",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_phone"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the street address, city, state, and ZIP code for the owner?",
+          "expected": "123 Maple Dr Riverview, CT 06877",
+          "ocr_hit": false,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth (DOB) listed for Jordan Brooks?",
+          "expected": "1994-11-10",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the IP address recorded for the 'Consent Form Viewed' event?",
+          "expected": "73.21.44.19",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_url"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the staff member logged in as the Coordinator?",
+          "expected": "Kate Smith",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the pet whose record is being viewed?",
+          "expected": "Buddy",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What breed of dog is Buddy?",
+          "expected": "Golden Retriever",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the date and time of the upcoming surgery?",
+          "expected": "May 28, 2025 8:00 AM",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date",
+            "private_person"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the veterinary clinic?",
+          "expected": "Lakeview Veterinary Clinic",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the status of the upcoming appointment?",
+          "expected": "Scheduled",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the weight of the pet recorded on Apr 12, 2025?",
+          "expected": "72.4 lbs",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-017_synthetic-pii-000017_910017",
+      "image_path": "images/017_imagegen-017_synthetic-pii-000017_910017.png",
+      "ocr_chars": 3975,
+      "ocr_tokens": 416,
+      "detected_span_count": 11,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the API token value shown in the terminal environment variables?",
+          "expected": "sk-test-redact-b15e2ed6b8f40aedbb9deeb4e2f3",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "secret"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth associated with the user profile in the terminal?",
+          "expected": "1999-05-28",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the private link URL displayed in the terminal output?",
+          "expected": "https://files.example.com/share/b15e2ed6b8f40aedbb9deeb4e2f3?sig=9deeb4e2f3",
+          "ocr_hit": false,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_url"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the internal IP address listed for the node in the terminal?",
+          "expected": "10.52.3.41",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_url"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Node ID listed in the terminal environment variables?",
+          "expected": "host-755 / 10.52.209.130",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the incident runbook shown in the browser window?",
+          "expected": "Claims API – Incident Runbook",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the severity level of the incident according to the runbook?",
+          "expected": "High",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the cluster listed in the runbook?",
+          "expected": "prod-claims-us-east-1",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the last updated date for the incident runbook?",
+          "expected": "2024-05-20",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the first step listed under 'Rotate External API Token'?",
+          "expected": "1. Log in to the Secrets Manager.",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the service listed in the runbook?",
+          "expected": "claims-api",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-018_synthetic-pii-000018_910018",
+      "image_path": "images/018_imagegen-018_synthetic-pii-000018_910018.png",
+      "ocr_chars": 2514,
+      "ocr_tokens": 404,
+      "detected_span_count": 23,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the student who filed the grade appeal?",
+          "expected": "Samir Rivera",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address associated with the student Samir Rivera?",
+          "expected": "samir.rivera@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth listed for the student?",
+          "expected": "1974-01-15",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the student's record ID number?",
+          "expected": "REC-2675-51",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the professor logged into the system?",
+          "expected": "Prof. Jordan Lee",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the specific Appeal ID for this case?",
+          "expected": "GA-2024-0487",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Submission ID for the assignment in question?",
+          "expected": "SUB-88931",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the course for which the grade appeal was filed?",
+          "expected": "ENG 102: College Composition II",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the essay being reviewed?",
+          "expected": "Essay 3: Research Argument",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What was the total points earned by the student on this assignment?",
+          "expected": "68 / 100 (68%)",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the grade appeal?",
+          "expected": "In Progress",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the name of the learning management system shown in the header?",
+          "expected": "Riverside Learning Hub",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "How many comments are visible in the comments sidebar?",
+          "expected": "4",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date",
+            "private_date"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current grade listed for the assignment?",
+          "expected": "D+",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "imagegen-019_synthetic-pii-000019_910019",
+      "image_path": "images/019_imagegen-019_synthetic-pii-000019_910019.png",
+      "ocr_chars": 2076,
+      "ocr_tokens": 306,
+      "detected_span_count": 38,
+      "values": [
+        {
+          "category": "privacy",
+          "subtype": "What is the full name of the user currently logged into the GIS system?",
+          "expected": "Jordan Patel",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the specific street address for the parcel being viewed in the permit details?",
+          "expected": "77 Harbor Point Lane, Fairmont, PA 15108",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the email address listed for the applicant?",
+          "expected": "jordan.patel@example.com",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_email",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the date of birth listed for the applicant?",
+          "expected": "1973-11-17",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_date"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the name of the inspector assigned to the framing inspection?",
+          "expected": "Chris Rogers",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_person",
+            "private_person",
+            "private_person",
+            "private_person"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What are the exact latitude and longitude coordinates shown for the current map view?",
+          "expected": "Lat: 40.43721 Lon: -79.89231",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address"
+          ]
+        },
+        {
+          "category": "privacy",
+          "subtype": "What is the Parcel ID for the property at 77 Harbor Point Lane?",
+          "expected": "23-009-0212-0000-00",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "account_number"
+          ]
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the permit number for the building permit shown in the schedule window?",
+          "expected": "BLD-2024-01578",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the current status of the permit according to the sidebar?",
+          "expected": "Under Review",
+          "ocr_hit": false,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "Which map layer is currently selected to show aerial photography?",
+          "expected": "Aerial Imagery",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the zoning classification for this property?",
+          "expected": "R-1 Single Family Residential",
+          "ocr_hit": true,
+          "opf_hit": false,
+          "opf_labels": []
+        },
+        {
+          "category": "utility",
+          "subtype": "What is the title of the website shown in the browser tab?",
+          "expected": "City of Fairmont - Permit GIS",
+          "ocr_hit": true,
+          "opf_hit": true,
+          "opf_labels": [
+            "private_address",
+            "private_address",
+            "private_address"
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 135.279681333981,
+  "ocr_value_recall": 0.9377289377289377,
+  "end_to_end_value_recall": 0.4908424908424908,
+  "opf_given_ocr_value_recall": 0.5234375,
+  "privacy_ocr_recall": 0.9271523178807947,
+  "privacy_end_to_end_recall": 0.7350993377483444,
+  "privacy_opf_given_ocr_recall": 0.7928571428571428,
+  "utility_false_positive_rate": 0.1885245901639344
+}
