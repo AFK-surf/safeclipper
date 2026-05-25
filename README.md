@@ -23,7 +23,8 @@ The goal is not to replace agent memory or permission systems. The goal is to re
 - `apps/macos/SafeClipper/`: native SwiftUI macOS app. It links the Rust library for OCR, privacy detection, and image redaction.
 - `models/`: model download scripts and ignored local model cache.
 - `fixtures/`: small local test images.
-- `eval/`: OCR/evaluation artifacts from dataset experiments.
+- `eval/`: OCR/evaluation artifacts from dataset experiments, including the
+  `desktop-pii` Hugging Face screenshot benchmark runner.
 
 There is no `privacy-filter` submodule. The CLI and the macOS app's linked Rust library consume the public Hugging Face ONNX artifacts directly.
 
@@ -38,6 +39,35 @@ Measured on May 25, 2026 with a release build on an Apple M3 Max, 64 GB memory, 
 | Short text redaction | `Alice Smith email alice@example.com` | CPU | 2 | ~0.65 s | ~70 ms |
 | Support-ticket text | 255 chars with name, email, phone, address, API token | CPU | 8 | ~1.04 s | ~423 ms |
 | Screenshot redaction | `fixtures/privacy-screenshot.png` with Vision OCR | CPU | 8 | ~1.39 s | ~419 ms |
+
+## Desktop PII Evaluation
+
+The `eval/desktop-pii` harness downloads `JettChenT/desktop-pii-210` from
+Hugging Face, runs safeclipper over all 210 synthetic desktop screenshots, and
+scores Gemini answers on the safeclipper-redacted images.
+
+Latest full run on May 25, 2026. All rows use Gemini redacted-image QA over
+the same 210 synthetic desktop screenshots and the same calibrated
+2,717-question subset. The safeclipper row uses `model_q4_embedded.onnx`, CPU
+provider, and Apple Vision OCR.
+
+| Redactor | QA questions | Utility score | Privacy block rate | Privacy leak rate | Overall |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| WebRedact large | 2,717 | 0.6412 | 0.5761 | 0.4239 | 0.6087 |
+| ScreenPipe PII image redactor | 2,717 | 0.9043 | 0.2395 | 0.7605 | 0.5719 |
+| Gemini 3 Flash preview redaction | 2,717 | 0.9681 | 0.7647 | 0.2353 | 0.8664 |
+| safeclipper q4 + OCR | 2,717 | 0.9152 | 0.7039 | 0.2961 | 0.8095 |
+
+Run it with `OPENROUTER_API_KEY` or `OPENAI_API_KEY` plus an OpenAI-compatible
+endpoint from `OPENROUTER_BASE_URL`, `OPENAI_BASE_URL`, `LLM_BASE_URL`, or
+`--llm-base-url`:
+
+```bash
+uv --project eval run python \
+  eval/desktop-pii/run_eval.py --qa-mode gemini --resume
+```
+
+Detailed methodology and results live in `eval/desktop-pii/README.md`.
 
 ## Setup
 
