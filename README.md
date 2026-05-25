@@ -2,7 +2,7 @@
 
 <img src="assets/safeclipper-example.svg" alt="safeclipper local screenshot redaction example" width="100%">
 
-safeclipper is a local-first image redaction tool for screenshots and agent workflows. It OCRs an image, detects sensitive text with OpenAI Privacy Filter q4 ONNX weights, and masks the matching image regions before the image leaves the user's machine.
+safeclipper is a local-first image and text redaction tool for screenshots and agent workflows. It OCRs an image, detects sensitive text with OpenAI Privacy Filter q4 ONNX weights, and masks the matching image regions before the image leaves the user's machine.
 
 ## Why
 
@@ -25,8 +25,6 @@ The goal is not to replace agent memory or permission systems. The goal is to re
 - `fixtures/`: small local test images.
 - `eval/`: OCR/evaluation artifacts from dataset experiments, including the
   `desktop-pii` Hugging Face screenshot benchmark runner.
-
-There is no `privacy-filter` submodule. The CLI and the macOS app's linked Rust library consume the public Hugging Face ONNX artifacts directly.
 
 ## Benchmark
 
